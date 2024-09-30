@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .tombol-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tombol {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .tombol input {
+            display: none;
+        }
+
+        .ganti {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ddd;
+            transition: 0.4s;
+            border-radius: 15px;
+        }
+
+        .ganti:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .ganti {
+            background-color: #4caf50;
+        }
+
+        input:checked + .ganti:before {
+            transform: translateX(30px);
+        }
+
+
+        .ganti.opposite:before {
+            left: unset;
+            right: 2px;
+        }
+
+        input:checked + .ganti.opposite:before {
+            transform: translateX(-30px);
+        }
+
+        .ganti.opposite {
+            background-color: #ff5722;
+        }
+
+        input:checked + .ganti.opposite {
+            background-color: #2196f3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="tombol-container">
+
+        <label class="tombol">
+            <input type="checkbox">
+            <span class="ganti"></span>
+        </label>
+
+        <label class="tombol">
+            <input type="checkbox">
+            <span class="ganti bentuk"></span>
+        </label>
+    </div>
+
+</body>
+</html>

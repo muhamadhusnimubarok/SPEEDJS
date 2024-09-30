@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO. 6</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #displayText {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .submitted-text {
+            color: red;
+        }
+
+        form {
+            display: flex;
+            gap: 10px; 
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Masukkan teks di sini" required>
+        <button type="submit">KIRIM</button>
+    </form>
+
+    <p id="displayText">Tidak mencari data...</p>
+</div>
+
+<script>
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const searchValue = document.getElementById('searchInput').value;
+    document.getElementById('displayText').innerHTML = `Mencari data <span class="submitted-text">${searchValue}</span>...`;
+}); 
+</script>
+
+</body>
+</html>

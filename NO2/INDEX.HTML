@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: #2E073F;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        nav {
+            background-color: #55679C;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-left: 550px; 
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 40px;
+        }
+
+        nav ul li a, nav ul li select {
+            text-decoration: none;
+            color: #2E073F;
+            font-weight: bold;
+            background-color: #FFF5E4;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover, nav ul li select:hover {
+            background-color: #faf8ef;
+        }
+
+        .BELANJA {
+            background-color: #7C93C3;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .BELANJA-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .BELANJA-header h2 {
+            margin: 0;
+            color: orange;
+        }
+
+        .BELANJA-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 50px;
+        }
+
+        .KARTU {
+            width: 240px;
+            margin: 20px;
+            background-color: #9f532a;
+            border: 3px solid #3B3B3B;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .KARTU:hover {
+            transform: translateY(-10px);
+        }
+
+        .KARTU-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .KARTU-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .KARTU-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .KARTU-body {
+            padding: 20px;
+            color: white;
+        }
+
+        .KARTU-body h3 {
+            margin: 10px 0;
+        }
+
+        .KARTU-BADAN i {
+            color: yellow;
+            font-size: 14px;
+        }
+
+        .cash {
+            display: block;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .KARTU-BADAN p {
+            margin: 5px 0;
+        }
+
+        .KARTU-BADAN button {
+            background-color: orange;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .KARTU-BADAN button:hover {
+            background-color: #FFD700;
+        }
+        .kartu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 500px;
+        }
+            
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <img src="IMG/2024-08-21.png" alt="Logo" width="10%">
+            <ul>
+                <li><a href="pesanan.html">📖 BOOKING</a></li>
+                <li><a href="#">👤 MASUK</a></li>
+                <li>
+                    <select>
+                        <option>LEMBAH PARA RAJA</option>
+                        <option >RERUNTUHAN KUNO</option>
+                        <option value="yogyakarta">PIRAMIDA GIZA</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="BELANJA" id="BELANJA">
+        <div class="BELANJA-header">
+            <h2>BERANGKATT</h2>
+            <h2>UWAWWW TRAVEL</h2>
+        </div>
+        <div class="BELANJA-box">
+            <div class="KARTU">
+                <div class="KARTU-image">
+                    <img src="IMG/ce00f94a5652b260fa6f87cc24ba4d05.jpg" alt="BANDA NEIRA">
+                </div>
+                <div class="KARTU-body">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <label class="cash">Rp74.400</label>
+                    <h3>EUTOPIHIA</h3>
+                    <p>Gurun Sahara merupakan padang pasir terbesar yang ada di dunia. Nama Sahara diambil dari bahasa Arab yang artinya adalah padang pasir. Gurun Sahara berada di utara Afrika serta memiliki usia dengan perkiraan 2,5 juta tahun.</p>
+                    <p>👤 20.000viewers</p>
+                    <p>💬 5.690 comments</p>
+                    <button type="submit">Read more</button>
+                </div>
+            </div>
+
+            <div class="KARTU">
+                <div class="KARTU-image">
+                    <img src="IMG/0a12f1ef368499cf6bc58ae3043944b2.jpg" alt="Pulau Komodo">
+                </div>
+                <div class="KARTU-body">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <label class="cash">Rp67.500</label>
+                    <h3>AFRIKA SELATAN</h3>
+                    <p> Sungai Nil merupakan sungai paling panjang yang ada di dunia, yang mengalir ke utara dari timur laut Afrika. Sungai Nil ini bermuara di Laut Mediterania yang ada di bagian timur laut Afrika</p>
+                    <p>👤 19.000viewers</p>
+                    <p>💬 6.980 comments</p>
+                    <button type="submit">Read more</button>
+                </div>
+            </div>
+
+            <div class="KARTU">
+                <div class="KARTU-image">
+                    <img src="IMG/2ec0773a1fcd847a5bd258ea4bba668e.jpg" alt="Raja Ampat">
+                </div>
+                <div class="KARTU-body">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <label class="cash">Rp63.200</label>
+                    <h3>PAPAKIN</h3>
+                    <p>Gunung Kilimanjaro merupakan gunung yang berada di sebelah timur laut Tanzania. Gunung Kilimanjaro merupakan salah satu gunung paling tinggi yang ada di dunia dengan tinggi mencapai 4.600 m jika diukur mulai dari kaki gunungnya.</p>
+                    <p>👤21.000 viewers</p>
+                    <p>💬 10.000comments</p>
+                    <button type="submit">Read more</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
